@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Session Chat</title>
+  <link rel="stylesheet" href="/static/css/style.css">
+</head>
+<body>
+  <main class="page">
+    <header class="header">
+      <h1>Session Chat</h1>
+      <div class="session-row">
+        <label for="session-id">session_id</label>
+        <input id="session-id" type="text" autocomplete="off">
+        <button id="new-session" class="secondary" type="button">新会话</button>
+      </div>
+    </header>
+
+    <section id="messages" class="messages" aria-live="polite"></section>
+
+    <form id="chat-form" class="composer">
+      <textarea id="user-input" placeholder="输入消息，Enter 发送，Shift+Enter 换行" required></textarea>
+      <button id="send-btn" type="submit">发送</button>
+    </form>
+  </main>
+
+  <script type="module" src="/static/js/app.js"></script>
+</body>
+</html>
